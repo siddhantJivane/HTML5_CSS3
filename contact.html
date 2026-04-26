@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Siddhant Suryakant Jivane</title>
+    <meta
+      name="description"
+      content="Get in touch with Siddhant Suryakant Jivane for Pega architecture, upgrades, DevSecOps, and cloud-native consulting."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">SSJ</a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s discuss your next Pega or cloud initiative.</h1>
+          <p class="lead">
+            Whether you’re planning a platform upgrade, setting up DevSecOps, or designing
+            new Pega applications, I’d be happy to explore how I can help.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column">
+          <div>
+            <h2>Direct contact</h2>
+            <ul class="contact-list">
+              <li>
+                <span class="label">Email</span>
+                <a href="mailto:siddhant1jivane@gmail.com">siddhant1jivane@gmail.com</a>
+              </li>
+              <li>
+                <span class="label">Phone</span>
+                <a href="tel:+61405160172">+61 405 160 172</a>
+              </li>
+              <li>
+                <span class="label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/siddhant-suryakant-jivane-pega-cloud/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View profile</a
+                >
+              </li>
+            </ul>
+            <p class="small-note">
+              Prefer email or LinkedIn for the fastest response. I’m open to opportunities
+              across Australia and APAC, as well as remote collaborations.
+            </p>
+          </div>
+
+          <div>
+            <h2>Send a message</h2>
+            <form
+              class="contact-form"
+              action="mailto:siddhant1jivane@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary full-width">Send message</button>
+              <p class="form-hint">
+                This form uses your email client to send the message. For urgent enquiries,
+                please email directly.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Siddhant Suryakant Jivane. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:siddhant1jivane@gmail.com" class="footer-link">Email</a>
+          <a
+            href="https://www.linkedin.com/in/siddhant-suryakant-jivane-pega-cloud/"
+            target="_blank"
+            rel="noreferrer"
+            class="footer-link"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="animations.js"></script>
+  </body>
+  </html>
+
+
