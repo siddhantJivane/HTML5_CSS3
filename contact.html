@@ -8,7 +8,21 @@
       name="description"
       content="Get in touch with Siddhant Suryakant Jivane for Pega architecture, upgrades, DevSecOps, and cloud-native consulting."
     />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/contact.html" />
+    <meta name="theme-color" content="#0b1b33" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Siddhant Suryakant Jivane" />
+    <meta property="og:title" content="Contact | Siddhant Suryakant Jivane" />
+    <meta property="og:description" content="Get in touch with Siddhant Suryakant Jivane for Pega architecture, upgrades, DevSecOps, and cloud-native consulting." />
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/contact.html" />
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-image.jpg" />
+    <meta property="og:image:alt" content="Portrait of Siddhant Suryakant Jivane" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Contact | Siddhant Suryakant Jivane" />
+    <meta name="twitter:description" content="Get in touch with Siddhant Suryakant Jivane for Pega architecture, upgrades, DevSecOps, and cloud-native consulting." />
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-image.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,10 +66,6 @@
                 <a href="mailto:siddhant1jivane@gmail.com">siddhant1jivane@gmail.com</a>
               </li>
               <li>
-                <span class="label">Phone</span>
-                <a href="tel:+61405160172">+61 405 160 172</a>
-              </li>
-              <li>
                 <span class="label">LinkedIn</span>
                 <a
                   href="https://www.linkedin.com/in/siddhant-suryakant-jivane-pega-cloud/"
@@ -73,12 +83,14 @@
 
           <div>
             <h2>Send a message</h2>
-            <form
-              class="contact-form"
-              action="mailto:siddhant1jivane@gmail.com"
-              method="post"
-              enctype="text/plain"
-            >
+            <!--
+              To receive messages directly (no email app needed), create a free form at
+              https://formspree.io and paste its URL into data-endpoint, e.g.
+              data-endpoint="https://formspree.io/f/abcdwxyz".
+              While data-endpoint is empty, the form opens a pre-filled email to the
+              address in the "Direct contact" list instead.
+            -->
+            <form id="contact-form" class="contact-form" data-endpoint="" novalidate>
               <div class="form-field">
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text" required />
@@ -95,10 +107,12 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
               </div>
+              <!-- Honeypot field to catch spam bots; hidden from people -->
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden />
               <button type="submit" class="btn primary full-width">Send message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
               <p class="form-hint">
-                This form uses your email client to send the message. For urgent enquiries,
-                please email directly.
+                For urgent enquiries, please email directly.
               </p>
             </form>
           </div>
@@ -125,7 +139,8 @@
       </script>
     </footer>
     <script src="animations.js"></script>
+    <script src="contact.js"></script>
   </body>
-  </html>
+</html>
 
 

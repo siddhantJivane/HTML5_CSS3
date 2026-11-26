@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found | Siddhant Suryakant Jivane</title>
+    <meta
+      name="description"
+      content="The page you were looking for could not be found."
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0b1b33" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="/index.html" class="logo">SSJ</a>
+        <nav class="nav">
+          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="/experience.html" class="nav-link">Experience</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">404</p>
+          <h1>This page doesn’t exist.</h1>
+          <p class="lead">
+            The link may be out of date, or the page may have moved.
+          </p>
+          <div class="hero-actions">
+            <a href="/index.html" class="btn primary">Back to home</a>
+            <a href="/contact.html" class="btn ghost">Contact me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Siddhant Suryakant Jivane. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:siddhant1jivane@gmail.com" class="footer-link">Email</a>
+          <a
+            href="https://www.linkedin.com/in/siddhant-suryakant-jivane-pega-cloud/"
+            target="_blank"
+            rel="noreferrer"
+            class="footer-link"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <script src="/animations.js"></script>
+  </body>
+</html>
+
+
